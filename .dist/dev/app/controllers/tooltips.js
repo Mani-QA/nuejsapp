@@ -1,4 +1,4 @@
-// simple-mpa/app/controllers/tooltips.js
+// app/controllers/tooltips.js
 if (CSS.supports("anchor-name: --tip")) {
   let addTitle2 = function(e) {
     let el = e.target;

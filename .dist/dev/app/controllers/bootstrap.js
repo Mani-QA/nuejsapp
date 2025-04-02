@@ -1,4 +1,4 @@
-// simple-mpa/app/controllers/bootstrap.js
+// app/controllers/bootstrap.js
 import { router } from "/@nue/app-router.js";
 import { model } from "../model/index.js";
 import { mount } from "/@nue/mount.js";
@@ -9,20 +9,17 @@ router.configure({
   persistent_params: ["show_grid_view"]
 });
 addEventListener("route:app", async () => {
-  if (model.authenticated) {
+  try {
     await model.initialize();
-  } else {
-    mount("login-screen", window.login);
+    await model.load();
+    mount("app", window.app);
+  } catch (error) {
+    console.error("Error initializing or mounting the application:", error);
   }
 });
 addEventListener("hmr", () => {
   app.classList.add("hmr");
   setTimeout(() => app.classList.remove("hmr"), 100);
-});
-model.on("authenticated", async () => {
-  await model.load();
-  window.login.innerHTML = "";
-  mount("app", window.app);
 });
 if (window.app)
   dispatchEvent(new Event("route:app"));

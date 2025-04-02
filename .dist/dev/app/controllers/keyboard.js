@@ -1,4 +1,4 @@
-// simple-mpa/app/controllers/keyboard.js
+// app/controllers/keyboard.js
 import { $, $$ } from "/@nue/view-transitions.js";
 import { router } from "/@nue/app-router.js";
 var ITEM = "a.list-item";

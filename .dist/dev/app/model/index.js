@@ -22,7 +22,7 @@ var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require
   throw Error('Dynamic require of "' + x + '" is not supported');
 });
 
-// simple-mpa/app/model/index.js
+// app/model/index.js
 import { loadChunks } from "./event-sourcing.js";
 import { fetchWithAuth, login } from "./auth.js";
 import { createUser } from "./users.js";
@@ -100,11 +100,11 @@ var model = {
     model.total = engine.get_total();
   },
   async initialize() {
-    if (model.authenticated) {
-      if (!model.user)
-        model.user = await fetchWithAuth("user.json");
-      emit("authenticated");
+    if (!model.user) {
+      model.user = { id: "default", name: "Default User", email: "user@example.com" };
+      console.log("Model initialized with default user.");
     }
+    emit("authenticated");
   }
 };
 function emit(event, data) {

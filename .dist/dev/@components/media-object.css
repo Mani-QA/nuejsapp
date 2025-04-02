@@ -1,4 +1,4 @@
-/* simple-mpa/@components/media-object.css */
+/* @components/media-object.css */
 @layer components {
   .media {
     align-items: var(--align, center);

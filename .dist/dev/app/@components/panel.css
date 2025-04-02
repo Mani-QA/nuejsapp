@@ -1,4 +1,4 @@
-/* simple-mpa/app/@components/panel.css */
+/* app/@components/panel.css */
 @layer components {
   .panel {
     height: calc(100vh - calc(var(--body-padding) * 2));

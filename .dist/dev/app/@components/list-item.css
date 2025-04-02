@@ -1,4 +1,4 @@
-/* simple-mpa/app/@components/list-item.css */
+/* app/@components/list-item.css */
 @layer components {
   .list-item {
     font-size: var(--smaller);

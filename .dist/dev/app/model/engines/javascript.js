@@ -1,4 +1,4 @@
-// simple-mpa/app/model/engines/javascript.js
+// app/model/engines/javascript.js
 var events = [];
 function add_events(input) {
   const arr = input.split(`

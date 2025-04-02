@@ -1,4 +1,4 @@
-// simple-mpa/app/model/auth.js
+// app/model/auth.js
 var is_live = location.hostname.endsWith("nuejs.org");
 async function fetchWithAuth(path, as_text) {
   const { sid } = localStorage;

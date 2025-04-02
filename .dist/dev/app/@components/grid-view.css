@@ -1,4 +1,4 @@
-/* simple-mpa/app/@components/grid-view.css */
+/* app/@components/grid-view.css */
 @layer components {
   .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

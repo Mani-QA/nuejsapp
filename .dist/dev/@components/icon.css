@@ -1,4 +1,4 @@
-/* simple-mpa/@components/icon.css */
+/* @components/icon.css */
 @layer components {
   .icon {
     width: var(--size, 1.25em);

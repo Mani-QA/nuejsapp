@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 <title>Nue CRM / A single-page app demo</title>
 <meta name="generator" content="Nue v1.0.0-RC.3 (nuejs.org)">
-<meta name="date.updated" content="2025-04-02T17:21:01.893Z">
+<meta name="date.updated" content="2025-04-02T18:27:53.512Z">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta property="og:title" content="Nue CRM / A single-page app demo">
 <meta name="nue:components" content="/view/media.js /app/view/app-screen.js /app/view/chat.js /app/view/collection.js /app/view/content-panel.js /app/view/details-panel.js /app/view/login-screen.js /app/view/media-thumbs.js /app/view/nav-panel.js /app/view/search-input.js /app/view/sort-buttons.js /app/view/user-details.js /app/view/user-item.js /app/view/utils.js">
@@ -14,7 +14,7 @@
 <meta name="nue:globals" content="@globals @app controllers view">
 <meta name="nue:libs" content="@components @contexts app/@components">
 <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
-<style href="/@globals/0-settings.css">/* simple-mpa/@globals/0-settings.css */
+<style href="/@globals/0-settings.css">/* @globals/0-settings.css */
 @layer settings, structure, contexts, components, effects, adjustments, screens, overrides;
 
 @layer settings {
@@ -51,7 +51,7 @@ margin: 0;
   }
 }
 </style>
-<style href="/@globals/colors.css">/* simple-mpa/@globals/colors.css */
+<style href="/@globals/colors.css">/* @globals/colors.css */
 @layer settings {
   :root {
 --base-50: oklch(.984 .003 247.858);
@@ -74,7 +74,7 @@ margin: 0;
   }
 }
 </style>
-<style href="/@globals/effects.css">/* simple-mpa/@globals/effects.css */
+<style href="/@globals/effects.css">/* @globals/effects.css */
 @layer effects {
   @keyframes pulse {
 0%, 100% {
@@ -113,7 +113,7 @@ main:not(.hmr) .appears {
   }
 }
 </style>
-<style href="/@globals/overrides.css">/* simple-mpa/@globals/overrides.css */
+<style href="/@globals/overrides.css">/* @globals/overrides.css */
 @layer overrides {
   [hidden] {
 display: none;
@@ -124,7 +124,7 @@ margin-right: .25em;
   }
 }
 </style>
-<style href="/@components/button.css">/* simple-mpa/@components/button.css */
+<style href="/@components/button.css">/* @components/button.css */
 @layer components {
   button, [role="button"] {
 justify-content: space-around;
@@ -186,7 +186,7 @@ opacity: .5;
   }
 }
 </style>
-<style href="/@components/card.css">/* simple-mpa/@components/card.css */
+<style href="/@components/card.css">/* @components/card.css */
 @layer components {
   .card {
 border-color: var(--alpha-100);
@@ -196,7 +196,7 @@ padding: 1em 1.5em;
   }
 }
 </style>
-<style href="/@components/dialog.css">/* simple-mpa/@components/dialog.css */
+<style href="/@components/dialog.css">/* @components/dialog.css */
 @layer components {
   dialog {
 padding: 1em 1.5em;
@@ -219,7 +219,7 @@ background: #bebebe80;
   }
 }
 </style>
-<style href="/@components/form.css">/* simple-mpa/@components/form.css */
+<style href="/@components/form.css">/* @components/form.css */
 @layer components {
   input, textarea {
 border: 1px solid var(--base-300);
@@ -243,7 +243,7 @@ margin-block: .5em;
   }
 }
 </style>
-<style href="/@components/icon.css">/* simple-mpa/@components/icon.css */
+<style href="/@components/icon.css">/* @components/icon.css */
 @layer components {
   .icon {
 width: var(--size, 1.25em);
@@ -258,7 +258,7 @@ fill: none;
   }
 }
 </style>
-<style href="/@components/media-object.css">/* simple-mpa/@components/media-object.css */
+<style href="/@components/media-object.css">/* @components/media-object.css */
 @layer components {
   .media {
 align-items: var(--align, center);
@@ -275,7 +275,7 @@ color: var(--base-400);
   }
 }
 </style>
-<style href="/@components/pills.css">/* simple-mpa/@components/pills.css */
+<style href="/@components/pills.css">/* @components/pills.css */
 @layer components {
   .pill {
 border: var(--border);
@@ -303,7 +303,7 @@ color: var(--base-400);
   }
 }
 </style>
-<style href="/@contexts/interfaces.css">/* simple-mpa/@contexts/interfaces.css */
+<style href="/@contexts/interfaces.css">/* @contexts/interfaces.css */
 @layer contexts {
   :root {
 --ui-font: 14px;
@@ -379,7 +379,7 @@ padding: .5em 1em;
   }
 }
 </style>
-<style href="/app/@app/app.css">/* simple-mpa/app/@app/app.css */
+<style href="/app/@app/app.css">/* app/@app/app.css */
 @layer adjustments {
   body {
 background-color: var(--base-100);
@@ -392,7 +392,7 @@ gap: .25em;
   }
 }
 </style>
-<style href="/app/@app/screens.css">/* simple-mpa/app/@app/screens.css */
+<style href="/app/@app/screens.css">/* app/@app/screens.css */
 @layer screens {
   @media (max-width: 1200px) {
 .details-panel {
@@ -441,7 +441,7 @@ display: none;
   }
 }
 </style>
-<style href="/app/@app/settings.css">/* simple-mpa/app/@app/settings.css */
+<style href="/app/@app/settings.css">/* app/@app/settings.css */
 @layer settings {
   :root {
 --border: 1px solid var(--base-200);
@@ -453,7 +453,7 @@ display: none;
   }
 }
 </style>
-<style href="/app/@app/structure.css">/* simple-mpa/app/@app/structure.css */
+<style href="/app/@app/structure.css">/* app/@app/structure.css */
 @layer structure {
   body {
 overflow: hidden;
@@ -478,7 +478,7 @@ width: 28em;
   }
 }
 </style>
-<style href="/app/@components/button.css">/* simple-mpa/app/@components/button.css */
+<style href="/app/@components/button.css">/* app/@components/button.css */
 @layer adjustments {
   button.plain {
 background-color: var(--alpha-50);
@@ -524,7 +524,7 @@ cursor: default;
   }
 }
 </style>
-<style href="/app/@components/chat.css">/* simple-mpa/app/@components/chat.css */
+<style href="/app/@components/chat.css">/* app/@components/chat.css */
 @layer components {
   .emoji {
 font-size: 3em;
@@ -599,7 +599,7 @@ pointer-events: none;
   }
 }
 </style>
-<style href="/app/@components/deflist.css">/* simple-mpa/app/@components/deflist.css */
+<style href="/app/@components/deflist.css">/* app/@components/deflist.css */
 @layer components {
   dl {
 display: grid;
@@ -625,7 +625,7 @@ text-align: right;
   }
 }
 </style>
-<style href="/app/@components/grid-view.css">/* simple-mpa/app/@components/grid-view.css */
+<style href="/app/@components/grid-view.css">/* app/@components/grid-view.css */
 @layer components {
   .grid-view {
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -661,7 +661,7 @@ margin-left: auto;
   }
 }
 </style>
-<style href="/app/@components/icons.css">/* simple-mpa/app/@components/icons.css */
+<style href="/app/@components/icons.css">/* app/@components/icons.css */
 @layer adjustments {
   .plan-free svg {
 color: var(--base-300);
@@ -692,7 +692,7 @@ color: var(--base-950);
   }
 }
 </style>
-<style href="/app/@components/list-item.css">/* simple-mpa/app/@components/list-item.css */
+<style href="/app/@components/list-item.css">/* app/@components/list-item.css */
 @layer components {
   .list-item {
 font-size: var(--smaller);
@@ -726,7 +726,7 @@ box-shadow: 0 0 0 2px var(--main-500);
   }
 }
 </style>
-<style href="/app/@components/login.css">/* simple-mpa/app/@components/login.css */
+<style href="/app/@components/login.css">/* app/@components/login.css */
 @layer adjustments {
   .login {
 max-width: 25em;
@@ -743,7 +743,7 @@ width: 100%;
   }
 }
 </style>
-<style href="/app/@components/media-thumbs.css">/* simple-mpa/app/@components/media-thumbs.css */
+<style href="/app/@components/media-thumbs.css">/* app/@components/media-thumbs.css */
 @layer components {
   .media-thumbs {
 display: flex;
@@ -773,7 +773,7 @@ border-radius: .25em;
   }
 }
 </style>
-<style href="/app/@components/nav-panel.css">/* simple-mpa/app/@components/nav-panel.css */
+<style href="/app/@components/nav-panel.css">/* app/@components/nav-panel.css */
 @layer components {
   .nav-panel header {
 display: flex;
@@ -841,7 +841,7 @@ margin-left: .5em;
   }
 }
 </style>
-<style href="/app/@components/panel.css">/* simple-mpa/app/@components/panel.css */
+<style href="/app/@components/panel.css">/* app/@components/panel.css */
 @layer components {
   .panel {
 height: calc(100vh - calc(var(--body-padding) * 2));
@@ -904,7 +904,7 @@ flex-grow: 1;
   }
 }
 </style>
-<style href="/app/@components/search-input.css">/* simple-mpa/app/@components/search-input.css */
+<style href="/app/@components/search-input.css">/* app/@components/search-input.css */
 @layer components {
   .search {
 background-color: #fff;
@@ -947,7 +947,7 @@ display: none;
   }
 }
 </style>
-<style href="/app/@components/table-view.css">/* simple-mpa/app/@components/table-view.css */
+<style href="/app/@components/table-view.css">/* app/@components/table-view.css */
 @layer components {
   .table-view {
 container-type: size;
@@ -1004,7 +1004,7 @@ grid-area: message;
   }
 }
 </style>
-<style href="/app/@components/tooltip.css">/* simple-mpa/app/@components/tooltip.css */
+<style href="/app/@components/tooltip.css">/* app/@components/tooltip.css */
 @layer components {
   span[role="tooltip"] {
 position-anchor: --tip;
@@ -1066,8 +1066,6 @@ display: inline-block;
 
   <body>
     
-<div id="login"></div>
-
 <app-wrap id="app" custom="app-wrap">
   <script type="application/json">{"config":{"views":[{"title":"All contacts","icon":"users"},{"title":"Demo requests","type":"demo_request"},{"title":"Questions","type":"question"},{"title":"Problems","type":"problem"},{"title":"Feedback","type":"feedback"}],"plans":{"enterprise":"Enterprise","pro":"Pro","free":"Free"},"company_sizes":{"xl":"Very large","l":"Large","m":"Medium","s":"Small"}}}</script>
 </app-wrap>

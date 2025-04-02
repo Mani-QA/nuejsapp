@@ -1,4 +1,4 @@
-// simple-mpa/app/view/util.js
+// app/view/util.js
 import { $, $$ } from "/@nue/view-transitions.js";
 var TODAY = new Intl.DateTimeFormat("en-US", { hour: "numeric", minute: "2-digit" });
 var THIS_YEAR = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric" });

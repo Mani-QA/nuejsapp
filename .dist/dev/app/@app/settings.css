@@ -1,4 +1,4 @@
-/* simple-mpa/app/@app/settings.css */
+/* app/@app/settings.css */
 @layer settings {
   :root {
     --border: 1px solid var(--base-200);

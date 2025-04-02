@@ -1,4 +1,3 @@
-
 import { loadChunks } from './event-sourcing.js'
 import { fetchWithAuth, login } from './auth.js'
 import { createUser } from './users.js'
@@ -97,10 +96,14 @@ export const model = {
 
   // fetch application data
   async initialize() {
-    if (model.authenticated) {
-      if (!model.user) model.user = await fetchWithAuth('user.json')
-      emit('authenticated')
+    // Bypass authentication check: Set a default user and emit the 'authenticated' event
+    if (!model.user) {
+      // Assign a default user object as we're skipping the login/fetch process
+      model.user = { id: 'default', name: 'Default User', email: 'user@example.com' };
+      console.log('Model initialized with default user.'); // Optional: for debugging
     }
+    // Always emit 'authenticated' now to signal readiness
+    emit('authenticated');
   }
 }
 

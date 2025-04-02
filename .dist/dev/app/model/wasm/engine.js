@@ -1,4 +1,4 @@
-// simple-mpa/app/model/wasm/engine.js
+// app/model/wasm/engine.js
 var wasm;
 var WASM_VECTOR_LEN = 0;
 var cachedUint8ArrayMemory0 = null;

@@ -1,4 +1,4 @@
-/* simple-mpa/@components/form.css */
+/* @components/form.css */
 @layer components {
   input, textarea {
     border: 1px solid var(--base-300);

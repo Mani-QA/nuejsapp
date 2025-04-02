@@ -1,4 +1,4 @@
-/* simple-mpa/@globals/colors.css */
+/* @globals/colors.css */
 @layer settings {
   :root {
     --base-50: oklch(.984 .003 247.858);

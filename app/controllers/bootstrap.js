@@ -1,4 +1,3 @@
-
 import { router } from '/@nue/app-router.js'
 import { model } from '../model/index.js'
 import { mount } from '/@nue/mount.js'
@@ -12,25 +11,23 @@ router.configure({
   persistent_params: ['show_grid_view']
 })
 
-// setup login screen
+// setup application - bypass login
 addEventListener('route:app', async () => {
-  if (model.authenticated) {
-    await model.initialize()
-  } else {
-    mount('login-screen', window.login)
+  // Assume authenticated: Initialize model and mount app
+  try {
+    await model.initialize(); // Initialize data structures, etc.
+    await model.load(); // Load actual data
+    mount('app', window.app); // Mount the main app component
+  } catch (error) {
+    console.error("Error initializing or mounting the application:", error);
+    // Optionally display an error message to the user
   }
-})
+});
 
 // disable CSS transition distractions when hot-reloaded
 addEventListener('hmr', () => {
   app.classList.add('hmr')
   setTimeout(() => app.classList.remove('hmr'), 100)
-})
-
-model.on('authenticated', async () => {
-  await model.load()
-  window.login.innerHTML = ''
-  mount('app', window.app)
 })
 
 // page loaded directly (not through MPA routing)

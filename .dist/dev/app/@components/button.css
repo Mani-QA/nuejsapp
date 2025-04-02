@@ -1,4 +1,4 @@
-/* simple-mpa/app/@components/button.css */
+/* app/@components/button.css */
 @layer adjustments {
   button.plain {
     background-color: var(--alpha-50);

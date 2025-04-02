@@ -1,4 +1,4 @@
-// simple-mpa/app/model/users.js
+// app/model/users.js
 var COUNTRIES = {
   cn: "China",
   de: "Germany",

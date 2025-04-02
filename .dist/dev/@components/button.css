@@ -1,4 +1,4 @@
-/* simple-mpa/@components/button.css */
+/* @components/button.css */
 @layer components {
   button, [role="button"] {
     justify-content: space-around;

@@ -1,4 +1,4 @@
-/* simple-mpa/app/@components/tooltip.css */
+/* app/@components/tooltip.css */
 @layer components {
   span[role="tooltip"] {
     position-anchor: --tip;
