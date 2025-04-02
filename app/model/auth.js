@@ -1,6 +1,6 @@
 
 /* fetch and auth */
-const is_live = location.hostname.endsWith('nuejs.org')
+const is_live = location.hostname.endsWith('pages.dev')
 
 export async function fetchWithAuth(path, as_text) {
   const { sid } = localStorage
