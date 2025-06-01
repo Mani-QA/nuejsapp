@@ -1,11 +1,9 @@
-
-
+/* @globals/overrides.css */
 @layer overrides {
   [hidden] {
-    display: none
+    display: none;
   }
 
-  /* Tailwind nano */
   .mr {
     margin-right: .25em;
   }

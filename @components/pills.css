@@ -1,4 +1,4 @@
-
+/* @components/pills.css */
 @layer components {
   .pill {
     border: var(--border);
@@ -9,15 +9,19 @@
     padding: .25em;
     padding-right: .75em;
     border-radius: 1em;
-    align-items: center;
+    align-items:  center;
     gap: .25em;
-    .icon { color: var(--main-500) }
+  }
 
-    &.plain {
-      border: unset;
-      .icon {
-        color: var(--base-400);
-      }
-    }
+  .pill .icon {
+    color: var(--main-500);
+  }
+
+  .pill.plain {
+    border: unset;
+  }
+
+  .pill.plain .icon {
+    color: var(--base-400);
   }
 }

@@ -1,4 +1,4 @@
-
+/* @components/form.css */
 @layer components {
   input, textarea {
     border: 1px solid var(--base-300);
@@ -13,13 +13,11 @@
   form label {
     margin-block: 1em;
     display: block;
+  }
 
-    > :first-child {
-      font-size: 1em;
-      font-weight: 550;
-      margin-block: .5em;
-    }
+  form label > :first-child {
+    font-size: 1em;
+    font-weight: 550;
+    margin-block: .5em;
   }
 }
-
-
